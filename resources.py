@@ -1,5 +1,10 @@
 help_message = '''\
-CMAX CLI
+   ____ __  __    _    __  __                 _   _                 
+  / ___|  \/  |  / \   \ \/ /     _ __  _   _| |_| |__   ___  _ __  
+ | |   | |\/| | / _ \   \  /_____| '_ \| | | | __| '_ \ / _ \| '_ \ 
+ | |___| |  | |/ ___ \  /  \_____| |_) | |_| | |_| | | | (_) | | | |
+  \____|_|  |_/_/   \_\/_/\_\    | .__/ \__, |\__|_| |_|\___/|_| |_|
+                                 |_|    |___/                       
 KEYPAIR COMMANDS:
  - generate_keypair - Generate a new keypair
  - load_keypair <private_key_pem_file> - Load keypair from PEM file
