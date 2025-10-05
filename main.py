@@ -308,15 +308,19 @@ def cli():
     handle_load_contacts()
     handle_list_contacts()
     handle_load_keypair()
-    while command := input('> '):
-        command, *args = command.split()
-        if command == 'exit':
-            break
-        handler = command_handlers.get(command)
-        if not handler:
-            print(f"Unknown command: {command}")
-            continue
-        handler(*args)
+
+    try:
+        while command := input('> '):
+            command, *args = command.split()
+            if command == 'exit':
+                break
+            handler = command_handlers.get(command)
+            if not handler:
+                print(f"Unknown command: {command}")
+                continue
+            handler(*args)
+    except KeyboardInterrupt:
+        print()
 
     print("Bye!")
 
